@@ -51,6 +51,27 @@ register(
 # ----------------------------------------
 
 register(
+    id='MovingPeaks-v0',
+    entry_point='gym.envs.classic_control:MovingPeaksEnv',
+    max_episode_steps=200,
+    reward_threshold=125000.0,
+)
+
+register(
+    id='MovingPeaksBigBias-v0',
+    entry_point='gym.envs.classic_control:MovingPeaksBigBiasEnv',
+    max_episode_steps=200,
+    reward_threshold=125000.0,
+)
+
+register(
+    id='DoubleMountainCar-v0',
+    entry_point='gym.envs.classic_control:DoubleMountainCarEnv',
+    max_episode_steps=200,
+    reward_threshold=-110.0,
+)
+
+register(
     id='CartPole-v0',
     entry_point='gym.envs.classic_control:CartPoleEnv',
     max_episode_steps=200,
